@@ -29,29 +29,30 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            txtHesapNo = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            txtAdSoyad = new TextBox();
-            label4 = new Label();
-            txtİlkBakiye = new TextBox();
-            label5 = new Label();
-            txtAySonuBakiye = new TextBox();
-            cmbHesapTürü = new ComboBox();
             btnHesapAç = new Button();
+            cmbHesapTürü = new ComboBox();
+            txtAySonuBakiye = new TextBox();
+            label5 = new Label();
+            txtİlkBakiye = new TextBox();
+            label4 = new Label();
+            txtAdSoyad = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            txtHesapNo = new TextBox();
+            label1 = new Label();
             groupBox2 = new GroupBox();
+            btnAysonu = new Button();
             btnİşlemYap = new Button();
             cmbİşlemTürü = new ComboBox();
             txtİşlemNotu = new TextBox();
             label7 = new Label();
             txtTutar = new TextBox();
-            label8 = new Label();
             label9 = new Label();
-            btnAysonu = new Button();
+            label8 = new Label();
             groupBox3 = new GroupBox();
             lblHesapHareketleri = new Label();
             lblSonBakiye = new Label();
+            button1 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -77,62 +78,29 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Hesap açma işlemleri";
             // 
-            // label1
+            // btnHesapAç
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(30, 36);
-            label1.Name = "label1";
-            label1.Size = new Size(64, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Hesap NO:";
+            btnHesapAç.Location = new Point(226, 178);
+            btnHesapAç.Name = "btnHesapAç";
+            btnHesapAç.Size = new Size(75, 23);
+            btnHesapAç.TabIndex = 3;
+            btnHesapAç.Text = "Hesap Aç";
+            btnHesapAç.UseVisualStyleBackColor = true;
             // 
-            // txtHesapNo
+            // cmbHesapTürü
             // 
-            txtHesapNo.Location = new Point(100, 33);
-            txtHesapNo.Name = "txtHesapNo";
-            txtHesapNo.Size = new Size(201, 23);
-            txtHesapNo.TabIndex = 1;
+            cmbHesapTürü.FormattingEnabled = true;
+            cmbHesapTürü.Location = new Point(100, 62);
+            cmbHesapTürü.Name = "cmbHesapTürü";
+            cmbHesapTürü.Size = new Size(201, 23);
+            cmbHesapTürü.TabIndex = 2;
             // 
-            // label2
+            // txtAySonuBakiye
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(30, 65);
-            label2.Name = "label2";
-            label2.Size = new Size(67, 15);
-            label2.TabIndex = 0;
-            label2.Text = "Hesap Türü";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(30, 94);
-            label3.Name = "label3";
-            label3.Size = new Size(56, 15);
-            label3.TabIndex = 0;
-            label3.Text = "Ad soyad";
-            // 
-            // txtAdSoyad
-            // 
-            txtAdSoyad.Location = new Point(100, 91);
-            txtAdSoyad.Name = "txtAdSoyad";
-            txtAdSoyad.Size = new Size(201, 23);
-            txtAdSoyad.TabIndex = 1;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(30, 123);
-            label4.Name = "label4";
-            label4.Size = new Size(56, 15);
-            label4.TabIndex = 0;
-            label4.Text = "İlk bakiye";
-            // 
-            // txtİlkBakiye
-            // 
-            txtİlkBakiye.Location = new Point(100, 120);
-            txtİlkBakiye.Name = "txtİlkBakiye";
-            txtİlkBakiye.Size = new Size(201, 23);
-            txtİlkBakiye.TabIndex = 1;
+            txtAySonuBakiye.Location = new Point(100, 149);
+            txtAySonuBakiye.Name = "txtAySonuBakiye";
+            txtAySonuBakiye.Size = new Size(201, 23);
+            txtAySonuBakiye.TabIndex = 1;
             // 
             // label5
             // 
@@ -143,29 +111,62 @@
             label5.TabIndex = 0;
             label5.Text = "Aysonu Bakiye";
             // 
-            // txtAySonuBakiye
+            // txtİlkBakiye
             // 
-            txtAySonuBakiye.Location = new Point(100, 149);
-            txtAySonuBakiye.Name = "txtAySonuBakiye";
-            txtAySonuBakiye.Size = new Size(201, 23);
-            txtAySonuBakiye.TabIndex = 1;
+            txtİlkBakiye.Location = new Point(100, 120);
+            txtİlkBakiye.Name = "txtİlkBakiye";
+            txtİlkBakiye.Size = new Size(201, 23);
+            txtİlkBakiye.TabIndex = 1;
             // 
-            // cmbHesapTürü
+            // label4
             // 
-            cmbHesapTürü.FormattingEnabled = true;
-            cmbHesapTürü.Location = new Point(100, 62);
-            cmbHesapTürü.Name = "cmbHesapTürü";
-            cmbHesapTürü.Size = new Size(201, 23);
-            cmbHesapTürü.TabIndex = 2;
+            label4.AutoSize = true;
+            label4.Location = new Point(30, 123);
+            label4.Name = "label4";
+            label4.Size = new Size(56, 15);
+            label4.TabIndex = 0;
+            label4.Text = "İlk bakiye";
             // 
-            // btnHesapAç
+            // txtAdSoyad
             // 
-            btnHesapAç.Location = new Point(226, 178);
-            btnHesapAç.Name = "btnHesapAç";
-            btnHesapAç.Size = new Size(75, 23);
-            btnHesapAç.TabIndex = 3;
-            btnHesapAç.Text = "Hesap Aç";
-            btnHesapAç.UseVisualStyleBackColor = true;
+            txtAdSoyad.Location = new Point(100, 91);
+            txtAdSoyad.Name = "txtAdSoyad";
+            txtAdSoyad.Size = new Size(201, 23);
+            txtAdSoyad.TabIndex = 1;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(30, 94);
+            label3.Name = "label3";
+            label3.Size = new Size(56, 15);
+            label3.TabIndex = 0;
+            label3.Text = "Ad soyad";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(30, 65);
+            label2.Name = "label2";
+            label2.Size = new Size(67, 15);
+            label2.TabIndex = 0;
+            label2.Text = "Hesap Türü";
+            // 
+            // txtHesapNo
+            // 
+            txtHesapNo.Location = new Point(100, 33);
+            txtHesapNo.Name = "txtHesapNo";
+            txtHesapNo.Size = new Size(201, 23);
+            txtHesapNo.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(30, 36);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Hesap NO:";
             // 
             // groupBox2
             // 
@@ -183,6 +184,15 @@
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Nakit İşlemleri";
+            // 
+            // btnAysonu
+            // 
+            btnAysonu.Location = new Point(118, 178);
+            btnAysonu.Name = "btnAysonu";
+            btnAysonu.Size = new Size(75, 23);
+            btnAysonu.TabIndex = 3;
+            btnAysonu.Text = "Ay Sonu";
+            btnAysonu.UseVisualStyleBackColor = true;
             // 
             // btnİşlemYap
             // 
@@ -224,15 +234,6 @@
             txtTutar.Size = new Size(201, 23);
             txtTutar.TabIndex = 1;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(30, 94);
-            label8.Name = "label8";
-            label8.Size = new Size(34, 15);
-            label8.TabIndex = 0;
-            label8.Text = "Tutar";
-            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -242,14 +243,14 @@
             label9.TabIndex = 0;
             label9.Text = "İşlem Türü";
             // 
-            // btnAysonu
+            // label8
             // 
-            btnAysonu.Location = new Point(118, 178);
-            btnAysonu.Name = "btnAysonu";
-            btnAysonu.Size = new Size(75, 23);
-            btnAysonu.TabIndex = 3;
-            btnAysonu.Text = "Ay Sonu";
-            btnAysonu.UseVisualStyleBackColor = true;
+            label8.AutoSize = true;
+            label8.Location = new Point(30, 94);
+            label8.Name = "label8";
+            label8.Size = new Size(34, 15);
+            label8.TabIndex = 0;
+            label8.Text = "Tutar";
             // 
             // groupBox3
             // 
@@ -275,11 +276,21 @@
             lblSonBakiye.Size = new Size(324, 47);
             lblSonBakiye.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.Location = new Point(603, 509);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(799, 593);
+            Controls.Add(button1);
             Controls.Add(lblSonBakiye);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
@@ -321,5 +332,6 @@
         private GroupBox groupBox3;
         private Label lblHesapHareketleri;
         private Label lblSonBakiye;
+        private Button button1;
     }
 }
